@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T-shirt</title>
+  <title>Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
@@ -35,11 +35,10 @@
 
 
           <div class="row offcanvas-header">
-            <button type="button" class="col-6 btn-close bg-danger" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
+            <button type="button" class="col-6 btn-close bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             <h5 class="col-6 offcanvas-title" id="offcanvasRightLabel"><img
                 style="border-radius: 40% 10% 40% 10%; background-color: #b00020;"
-                src="https://theme.hstatic.net/1000306633/1000891824/14/logo.png?v=669" class="img-fluid" alt="">
+                src="https://theme.hstatic.net/1000306633/1000891824/14/logo.png?v=669"class="img-fluid" alt="">
             </h5>
           </div>
 
@@ -60,7 +59,7 @@
                   data-bs-toggle="dropdown" aria-expanded="false">Shop ALL</a>
                 <ul class="dropdown-menu rounded-0 ms-2 ms-menu hover-menu p-0" style="width: 200px;">
                   <li class="border-bottom"><a class="hover dropdown-item text-white p-2 font-monospace"
-                      href="../pages/tops.html">Tops</a></li>
+                      href="tops.html">Tops</a></li>
                   <li class="border-bottom"><a class="hover dropdown-item text-white p-2 font-monospace"
                       href="#">Bottoms</a></li>
                   <li class="border-bottom"><a class="hover dropdown-item text-white p-2 font-monospace"
@@ -91,7 +90,7 @@
 
             <div class="navbar-nav ms-3 mb-2 mb-lg-0 menu-4">
               <li class="nav-item">
-                <a class="nav-link fs-5 fw-bold color font-monospace" href="login.html">Login</a>
+                <a class="nav-link fs-5 fw-bold color font-monospace" href="pages/login.html">Login</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-5 fw-bold color font-monospace" href="#">Signup</a>
@@ -104,125 +103,266 @@
     </nav>
   </header>
 
-  <div class="container-fluid mt-5 d-flex justify-content-center">
-    <div class="row w-card d-flex justify-content-center">
-      <h1 class="text-center">T-shirt</h1>
+  <div class="div">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+      data-bs-pause="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
 
-      <div class="container-fluid  mt-4">
-        <div style="border-bottom: 3px solid black ;" class="row mb-5 pb-2">
-
-          <div class="col-lg-8 col-md-8 col-12">
-            <div class="row ">
-
-              <div class="col-lg-3 col-md-3 col-6 dropdown px-0">
-                <button class="p-2 btn border-0 dropdown-toggle" type="button" id="dropdownPrice"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-filter"></i> Lọc giá
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownPrice">
-                  <li><a class="dropdown-item" href="#">Giá dưới 100.000đ</a></li>
-                  <li><a class="dropdown-item" href="#">100.000đ - 200.000đ</a></li>
-                  <li><a class="dropdown-item" href="#">200.000đ - 300.000đ</a></li>
-                  <li><a class="dropdown-item" href="#">300.000đ - 500.000đ</a></li>
-                  <li><a class="dropdown-item" href="#">Giá dưới 500.000đ</a></li>
-                </ul>
-              </div>
-
-              <div class="col-lg-3 col-md-3  col-6 dropdown px-0">
-                <button class="p-2 btn border-0  dropdown-toggle" type="button" id="dropdownSize"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-paperclip"></i> Loại
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownSize">
-                  <li><a class="dropdown-item" href="#">Cardigans</a></li>
-                  <li><a class="dropdown-item" href="#">Flannel</a></li>
-                  <li><a class="dropdown-item" href="#">Hoodies</a></li>
-                  <li><a class="dropdown-item" href="#">Innerwear </a></li>
-                  <li><a class="dropdown-item" href="#">Jackets</a></li>
-                  <li><a class="dropdown-item" href="#">Jersey</a></li>
-                  <li><a class="dropdown-item" href="#">Longgleeves</a></li>
-                </ul>
-              </div>
-
-              <div class="col-lg-3 col-md-3 col-6 dropdown px-0">
-                <button class="p-2 btn border-0 dropdown-toggle" type="button" id="dropdownColor"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-down-left-and-up-right-to-center"></i> Kích thước
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownColor">
-                  <li><a class="dropdown-item" href="#">Size S</a></li>
-                  <li><a class="dropdown-item" href="#">Size M</a></li>
-                  <li><a class="dropdown-item" href="#">Size L</a></li>
-                  <li><a class="dropdown-item" href="#">Size XL</a></li>
-                </ul>
-              </div>
-
-              <div class="col-lg-3 col-md-3 col-6 dropdown px-0">
-                <button class="p-2 btn border-0  dropdown-toggle" type="button" id="dropdownType"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-palette"></i> Màu sắc
-                </button>
-                <ul style="max-height: 200px; overflow-y: auto;" class="dropdown-menu" aria-labelledby="dropdownType">
-                  <li><a class="dropdown-item" href="#">Red</a></li>
-                  <li><a class="dropdown-item" href="#">Orange</a></li>
-                  <li><a class="dropdown-item" href="#">Yellow</a></li>
-                  <li><a class="dropdown-item" href="#">Green</a></li>
-                  <li><a class="dropdown-item" href="#">Blue</a></li>
-                  <li><a class="dropdown-item" href="#">Purple</a></li>
-                  <li><a class="dropdown-item" href="#">Pink</a></li>
-                  <li><a class="dropdown-item" href="#">Brown</a></li>
-                  <li><a class="dropdown-item" href="#">Grey</a></li>
-                  <li><a class="dropdown-item" href="#">Black</a></li>
-                  <li><a class="dropdown-item" href="#">Multi-Colour</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-12">
-            <div class="row">
-              <div class="col-12 dropdown d-flex justify-content-lg-end px-0">
-                <button class="p-2 btn border-0 dropdown-toggle" type="button" id="dropdownLatest"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-regular fa-star"></i> Mới nhất
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownLatest">
-                  <li><a class="dropdown-item" href="#">Mới nhất</a></li>
-                  <li><a class="dropdown-item" href="#">Giá tăng dần</a></li>
-                  <li><a class="dropdown-item" href="#">Giá giảm dần</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/anh.pnj.png" class="img-fluid" style alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/image.pnj.png" class="img-fluid " alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/hinh.pnj.png" class="img-fluid " alt="Slide 3">
         </div>
       </div>
 
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-4 d-flex justify-content-center ">
+    <div class="row custom-w">
+      <div class="col-sm-6 col-12 my-2 image-container">
+        <a href="#">
+          <img class="img-fluid image-hover"
+            src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/xxx_4.jpg?1705424601490" alt="">
+        </a>
+        <div class="image-text">
+          <p class="fw-bold fs-2">Best seller</p>
+          <p class="fw-medium fs-6">DC x BR Thương Bạn Gái/trai T-shirt</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-12 my-2 image-container">
+        <a href="#">
+          <img class="img-fluid image-hover"
+            src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/xxx_5.jpg?1705424601490" alt="">
+        </a>
+        <div class="image-text">
+          <p class="fw-bold fs-2">Best seller</p>
+          <p class="fw-medium fs-6">DirtyCoins Print Cardigan</p>
+        </div>
+      </div>
     </div>
   </div>
 
 
-
-
-
-
-  <div class="container-fluid d-flex justify-content-center">
+  <div class="container-fluid mt-4 d-flex justify-content-center">
     <div class="row w-card d-flex justify-content-center">
+      <h1 class="text-center">BEST SELLER</h1>
 
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0 ">
+      <div class="card border-0 col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
         <div class="card-body p-0 position-relative">
           <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">Collab</li>
             <li class="badge text-bg-dark p-2 demo">New arrival</li>
+            <li class="badge text-bg-dark p-2 demo">Best seller</li>
           </ul>
-          <a href="details.html">
+          <a href="#">
             <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-312419da-8137-4a78-9152-46124ff9cb1d.jpg?v=1702452106000"
+              src="https://bizweb.dktcdn.net/100/369/010/products/368962443-666281792084820-2564800252250659113-n-copy.jpg?v=1695299250827"
               alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dico Lil Dino Red
-            T-shirt
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text">DC x BR THƯƠNG BẠN TRAI T-SHIRT</P>
+          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
+        <div class="card-body p-0 position-relative">
+          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">Collab</li>
+            <li class="badge text-bg-dark p-2 demo">New arrival</li>
+            <li class="badge text-bg-dark p-2 demo">Best seller</li>
+          </ul>
+          <a href="#">
+            <img class="img-fluid"
+              src="https://bizweb.dktcdn.net/100/369/010/products/dm-20230821164209-001.jpg?v=1692637446997" alt="">
+            <div class="product-name-overlay">See details</div>
+          </a>
+        </div>
+        <div class="card-footer border-0 bg-body">
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text">DC x BR THƯƠNG BẠN GÁI T-SHIRT</P>
+          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
+        <div class="card-body p-0 position-relative">
+          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">New arrival</li>
+          </ul>
+          <a href="#">
+            <img class="img-fluid"
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-a0714f1b-1c4d-45e6-bb93-24e4385740a1.jpg?v=1702294461583"
+              alt="">
+            <div class="product-name-overlay">See details</div>
+          </a>
+        </div>
+        <div class="card-footer border-0 bg-body bg-transparent">
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text">DIRTYCOINS PRINT SLIDES - COFFEE</P>
+          <P class="text-center m-0 ellipsis-text">420.000<u>đ</u></P>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
+        <div class="card-body p-0 position-relative">
+          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">New arrival</li>
+          </ul>
+          <a href="#">
+            <img class="img-fluid" src="https://bizweb.dktcdn.net/100/369/010/products/sandal.jpg?v=1689577163083"
+              alt="">
+            <div class="product-name-overlay">See details</div>
+          </a>
+        </div>
+        <div class="card-footer border-0 bg-body">
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text">DIRTYCOINS PRINT SLIDES - BLACK</P>
+          <P class="text-center m-0 ellipsis-text">420.000<u>đ</u></P>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
+        <div class="card-body p-0 position-relative">
+          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">New arrival</li>
+          </ul>
+          <a href="#">
+            <img class="img-fluid"
+              src="https://bizweb.dktcdn.net/100/369/010/products/2-3d0a8b61-04fa-4be8-b3d1-29d1a54d41a9.jpg?v=1701674080263"
+              alt="">
+            <div class="product-name-overlay">See details</div>
+          </a>
+        </div>
+        <div class="card-footer border-0 bg-body">
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text">DICO MATE T-SHIRT - CREAM</P>
+          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
+        <div class="card-body p-0 position-relative">
+          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">New arrival</li>
+          </ul>
+          <a href="#">
+            <img class="img-fluid"
+              src="https://bizweb.dktcdn.net/100/369/010/products/2-8c995def-28b3-4666-96ec-c5d3dd9156c5.jpg?v=1701673303593"
+              alt="">
+            <div class="product-name-overlay">See details</div>
+          </a>
+        </div>
+        <div class="card-footer border-0 bg-body">
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text">DICO MATE T-SHIRT - BLACK</P>
+          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
+        <div class="card-body p-0 position-relative">
+          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">New arrival</li>
+          </ul>
+          <a href="#">
+            <img class="img-fluid"
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-a82ac387-a980-4427-b1d1-6608bbb0eb85.jpg?v=1701762010987"
+              alt="">
+            <div class="product-name-overlay">See details</div>
+          </a>
+        </div>
+        <div class="card-footer border-0 bg-body">
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text">PUPPIES REGULAR T-SHIRT - BROWN</P>
+          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
+        <div class="card-body p-0 position-relative">
+          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">New arrival</li>
+          </ul>
+          <a href="#">
+            <img class="img-fluid"
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-7d3b9d23-43bb-4f49-b551-22e5848bf981.jpg?v=1701948647793"
+              alt="">
+            <div class="product-name-overlay">See details</div>
+          </a>
+        </div>
+        <div class="card-footer border-0 bg-body">
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">DirtyCoins Embossed
+            Slides - Black</P>
+          <P class="text-center m-0 ellipsis-text">550.000<u>đ</u></P>
+        </div>
+      </div>
+      <button type="button" class="button-w btn btn-outline-dark mt-3">See More</button>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-4 d-flex justify-content-center ">
+    <div class="row custom-w">
+      <div class="col-sm-6 col-12 my-2 image-container">
+        <a href="#">
+          <img class="img-fluid image-hover"
+            src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/xxx_6.jpg?1705424601490" alt="">
+        </a>
+        <div class="image-text">
+          <p class="fw-bold fs-2">Best seller</p>
+          <p class="fw-medium fs-6">DirtyCoins Embossed Slides - Black</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-12 my-2 image-container">
+        <a href="#">
+          <img class="img-fluid image-hover"
+            src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/xxx_7.jpg?1705424601490" alt="">
+        </a>
+        <div class="image-text">
+          <p class="fw-bold fs-2">Best seller</p>
+          <p class="fw-medium fs-6">Puppies Regular T-shirt - Brown </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-4 d-flex justify-content-center">
+    <div class="row w-card d-flex justify-content-center">
+      <h1 class="text-center">NEW ARRIVALS</h1>
+
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
+        <div class="card-body p-0 position-relative">
+          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
+            <li class="badge text-bg-dark p-2 demo">New arrival</li>
+          </ul>
+          <a href="#">
+            <img class="img-fluid"
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-b269122f-1278-422c-80d7-e1ea57f762ea.jpg?v=1705576101740"
+              alt="">
+            <div class="product-name-overlay">See details</div>
+          </a>
+        </div>
+        <div class="card-footer border-0 bg-body">
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dico Lil Dino Red T-shirt
             - White">Dico Lil Dino Red T-shirt - White</P>
           <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
         </div>
@@ -235,17 +375,16 @@
             <li class="badge text-bg-dark p-2 demo">New arrival</li>
           </ul>
           <a href="#">
-            <img class="img-fluid"
-              src=" https://bizweb.dktcdn.net/100/369/010/products/1-b269122f-1278-422c-80d7-e1ea57f762ea.jpg?v=1705576101740"
+            <img class="img-fluid" src="https://bizweb.dktcdn.net/100/369/010/products/jersey-web.jpg?v=1705385985570"
               alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Combo Letters
-            Monogram
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Combo Letters Monogram
             Denim</P>
-          <P class="text-center m-0 ellipsis-text">1.140.000<u>đ</u></P>
+          <P class="text-center m-0 ellipsis-text text-danger">999.000<u>đ</u> <span
+              class="text-secondary text-decoration-line-through">1.140.000<u>đ</u></span> </P>
         </div>
       </div>
 
@@ -256,14 +395,13 @@
           </ul>
           <a href="#">
             <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-ea29b464-f90e-453c-90e2-f7b238c5d095.jpg?v=1702299825000"
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-16239aa8-4ddc-406f-b4f0-2d383f279f3e.jpg?v=1705321246130"
               alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body bg-transparent">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram Denim
             Backpack - Black</P>
           <P class="text-center m-0 ellipsis-text">720.000<u>đ</u></P>
         </div>
@@ -276,14 +414,13 @@
           </ul>
           <a href="#">
             <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-0d95855f-0355-4fde-ac20-55e649336194.jpg?v=1697697009000"
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-2dc193fd-9560-4398-942a-4311cbe9cdca.jpg?v=1704370473957"
               alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram Denim
             Jersey Shirt - Black</P>
           <P class="text-center m-0 ellipsis-text">690.000<u>đ</u></P>
         </div>
@@ -296,14 +433,13 @@
           </ul>
           <a href="#">
             <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-b68437b7-d308-4b0d-875a-1724b7f17fc6.jpg?v=1700205523000"
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-35ea4639-741f-474e-b80e-3c96ecafbd03.jpg?v=1704368996327"
               alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram Denim
             Short - Black</P>
           <P class="text-center m-0 ellipsis-text">450.000<u>đ</u></P>
         </div>
@@ -317,13 +453,13 @@
           </ul>
           <a href="#">
             <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/leather-bomber-1.jpg?v=1697873028000" alt="">
+              src="https://bizweb.dktcdn.net/100/369/010/products/dc-x-gam-worlds-23-zipped-hoodie-front-min.png?v=1694166071417"
+              alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">DC x GAM Worlds 23
-            Zipped
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">DC x GAM Worlds 23 Zipped
             Hoodie</P>
           <P class="text-center m-0 ellipsis-text">669.000<u>đ</u></P>
         </div>
@@ -336,13 +472,13 @@
           </ul>
           <a href="#">
             <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/felt-varsity-1.jpg?v=1697943944000" alt="">
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-8f8aa895-3d74-4b5b-9cbd-47976795d954.jpg?v=1703243569707"
+              alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dragon All Print
-            Shirt -
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dragon All Print Shirt -
             Cream</P>
           <P class="text-center m-0 ellipsis-text">499.000<u>đ</u></P>
         </div>
@@ -355,291 +491,44 @@
           </ul>
           <a href="#">
             <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/denim-racing-1.jpg?v=1697943940000" alt="">
+              src="https://bizweb.dktcdn.net/100/369/010/products/1-1824925d-e2aa-4b54-8c60-957e7ee2b685.jpg?v=1703501343837"
+              alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Relaxed Double Knee
-            Jeans
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Relaxed Double Knee Jeans
             - Orange</P>
           <P class="text-center m-0 ellipsis-text">790.000<u>đ</u></P>
         </div>
       </div>
-
-
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0 ">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-849571d9-624e-4509-a10c-919eb2e59ef6.jpg?v=1697702347000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dico Lil Dino Red
-            T-shirt
-            - White">Dico Lil Dino Red T-shirt - White</P>
-          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">Sale</li>
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/2-01a8a3a2-0c42-470e-b413-0017068ef3eb.jpg?v=1697790261000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Combo Letters
-            Monogram
-            Denim</P>
-          <P class="text-center m-0 ellipsis-text">1.140.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-ed87e1b7-919b-418e-9442-0c9e10e6cde0.jpg?v=1697703206000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body bg-transparent">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Backpack - Black</P>
-          <P class="text-center m-0 ellipsis-text">720.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/nylon-varsity-1.jpg?v=1697873061000" alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Jersey Shirt - Black</P>
-          <P class="text-center m-0 ellipsis-text">690.000<u>đ</u></P>
-        </div>
-      </div>
-
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-0db5d845-bef4-405d-b690-ca3f873d146c.jpg?v=1699434889000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Short - Black</P>
-          <P class="text-center m-0 ellipsis-text">450.000<u>đ</u></P>
-        </div>
-      </div>
-
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/2-c7489656-f1cb-4b10-ac93-a6af49cd3617.jpg?v=1698056890000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">DC x GAM Worlds 23
-            Zipped
-            Hoodie</P>
-          <P class="text-center m-0 ellipsis-text">669.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid" src="https://bizweb.dktcdn.net/100/369/010/products/img-1468.jpg?v=1694087146000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dragon All Print
-            Shirt -
-            Cream</P>
-          <P class="text-center m-0 ellipsis-text">499.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/nta101-43ac0jrd-1-y8qt-hinh-mat-truoc-0.jpg?v=1695528053000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Relaxed Double Knee
-            Jeans
-            - Orange</P>
-          <P class="text-center m-0 ellipsis-text">790.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0 ">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/back-6b5bce05-8875-4ca4-8c9a-204417c4e7f9.jpg?v=1693502225000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dico Lil Dino Red
-            T-shirt
-            - White">Dico Lil Dino Red T-shirt - White</P>
-          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">Sale</li>
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-e1292130-d40f-42a6-9b8e-7bffe6f20ffb.jpg?v=1687516123000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Combo Letters
-            Monogram
-            Denim</P>
-          <P class="text-center m-0 ellipsis-text">1.140.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/logo-track-jacket-a99be207-4870-4046-ae82-c8d5b0dbc9b1.jpg?v=1689910379000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body bg-transparent">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Backpack - Black</P>
-          <P class="text-center m-0 ellipsis-text">720.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/w-i-think-i-do-t-shirt-bla-01.jpg?v=1685187117000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Jersey Shirt - Black</P>
-          <P class="text-center m-0 ellipsis-text">690.000<u>đ</u></P>
-        </div>
-      </div>
-
+      <button type="button" class="button-w btn btn-outline-dark mt-3">See More</button>
     </div>
   </div>
 
 
-
-
-
-  <div class="container border-top mt-5">
-    <ul class="pagination p-5 d-flex justify-content-center">
-      <li class="page-item disabled">
-        <a class="page-link">Previous</a>
-      </li>
-      <li class="page-item "><a class="page-link text-dark" href="#">1</a></li>
-      <li class="page-item " aria-current="page">
-        <a class="page-link text-dark" href="#">2</a>
-      </li>
-      <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link text-dark" href="#">Next</a>
-      </li>
-    </ul>
+  <div class="container mt-4">
+    <h1 class="text-center mb-3">LOCAL BRAND</h1>
+    <div class="row">
+      <div class="col-3">
+        <img src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/brand1.png?1705424601490" class="img-fluid" alt="Description of Image">
+      </div>
+      <div class="col-3">
+        <img src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/brand4.png?1705424601490" class="img-fluid" alt="Description of Image">
+      </div>
+      <div class="col-3">
+        <img src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/brand6.png?1705424601490" class="img-fluid" alt="Description of Image">
+      </div>
+      <div class="col-3">
+        <img src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/brand7.png?1705424601490" class="img-fluid" alt="Description of Image">
+      </div>
+    </div>
   </div>
-
-
+  
 
   <div class="container-fluid" style="background-color: #F3F3F3;">
     <p class="size-ft m-0 p-3 font-monospace fw-bold"><i class="fa-solid fa-square-phone"></i> Hỗ trợ / Mua hàng:
-      <span class="text-danger">0123 456 789</span>
-    </p>
+      <span class="text-danger">0123 456 789</span></p>
   </div>
 
   <div class="d-none d-md-block container-fluid p-3 ">
@@ -660,8 +549,7 @@
           <tbody>
             <tr>
               <td scope="row"></td>
-              <td class="ps-2"><span class="fw-medium ">Quận 1</span>: 160 Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh.
-              </td>
+              <td class="ps-2"><span class="fw-medium ">Quận 1</span>: 160 Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh.</td>
             </tr>
             <tr>
               <td scope="row"></td>
@@ -670,8 +558,7 @@
             </tr>
             <tr>
               <td scope="row"></td>
-              <td class="ps-2"><span class="fw-medium ">Quận 1</span>: Central Market 4 Phạm Ngũ Lão, Phường Phạm
-                Ngũ
+              <td class="ps-2"><span class="fw-medium ">Quận 1</span>: Central Market 4 Phạm Ngũ Lão, Phường Phạm Ngũ
                 Lão</td>
             </tr>
             <tr>
@@ -761,8 +648,7 @@
           <tbody>
             <tr>
               <td scope="row"></td>
-              <td class="ps-2"><span class="fw-medium ">Văn Giang</span>: PT.TV 136 - Mega Grand World - Ocean Park
-              </td>
+              <td class="ps-2"><span class="fw-medium ">Văn Giang</span>: PT.TV 136 - Mega Grand World - Ocean Park</td>
             </tr>
           </tbody>
 
@@ -817,7 +703,7 @@
       <div class="col-lg-3 col-md-6 fs-4 font-monospace fw-bold">
         <span class="fs-4 font-monospace fw-bold">fanpage</span>
         <div class="container p-0">
-          <a href="#"><img src="../images/fanpage.png.png" class="img-fluid" alt=""></a>
+          <a href="#"><img src="images/fanpage.png.png" class="img-fluid" alt=""></a>
         </div>
       </div>
 
@@ -851,20 +737,17 @@
             <tbody>
               <tr>
                 <td scope="row"></td>
-                <td class="ps-2"><span class="fw-medium ">Quận 1</span>: 160 Nguyễn Cư Trinh, Phường Nguyễn Cư
-                  Trinh.
+                <td class="ps-2"><span class="fw-medium ">Quận 1</span>: 160 Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh.
                 </td>
               </tr>
               <tr>
                 <td scope="row"></td>
-                <td class="ps-2"><span class="fw-medium ">Quận 1</span>: The New Playground 26 Lý Tự Trọng, Phường
-                  Bến
+                <td class="ps-2"><span class="fw-medium ">Quận 1</span>: The New Playground 26 Lý Tự Trọng, Phường Bến
                   Nghé.</td>
               </tr>
               <tr>
                 <td scope="row"></td>
-                <td class="ps-2"><span class="fw-medium ">Quận 1</span>: Central Market 4 Phạm Ngũ Lão, Phường Phạm
-                  Ngũ
+                <td class="ps-2"><span class="fw-medium ">Quận 1</span>: Central Market 4 Phạm Ngũ Lão, Phường Phạm Ngũ
                   Lão</td>
               </tr>
               <tr>
@@ -954,8 +837,7 @@
             <tbody>
               <tr>
                 <td scope="row"></td>
-                <td class="ps-2"><span class="fw-medium ">Văn Giang</span>: PT.TV 136 - Mega Grand World - Ocean
-                  Park
+                <td class="ps-2"><span class="fw-medium ">Văn Giang</span>: PT.TV 136 - Mega Grand World - Ocean Park
                 </td>
               </tr>
             </tbody>
@@ -1037,7 +919,7 @@
       <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body pt-2">
           <div class="container p-0">
-            <a href="#"><img src="../images/fanpage.png.png" class="img-fluid" alt=""></a>
+            <a href="#"><img src="images/fanpage.png.png" class="img-fluid" alt=""></a>
           </div>
         </div>
       </div>
@@ -1048,6 +930,54 @@
     <p class="text-center">Copyright © 2024 Assignment 1 by vipboi</p>
   </div>
 
+
+
+  <!-- <div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog w-auto " style="margin-top: 200px;">
+          <div class="modal-content">
+            <div class="modal-body  position-relative ">
+              <button type="button" class="btn btn-secondary rounded-pill  position-absolute end-0 me-2 "
+                data-bs-dismiss="modal">X</button>
+              <div class="row">
+                <div class="col-6 p-0 ">
+                  <a href="#"><img
+                      src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/popup_shop_1.jpg?1704953971603"
+                      class="img-fluid  " alt=""></a>
+                </div>
+                <div class="col-6 d-block p-0 ">
+                  <a href="#"> <img
+                      src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/popup_shop_2.jpg?1704953971603"
+                      class="img-fluid  " alt=""></a>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-6 p-0 ">
+                  <a href="#"> <img
+                      src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/popup_shop_3.jpg?1704953971603"
+                      class="img-fluid  " alt=""></a>
+                </div>
+                <div class="col-6 p-0 ">
+                  <a href="#"><img
+                      src="https://bizweb.dktcdn.net/100/369/010/themes/914385/assets/popup_shop_4.jpg?1704953971603"
+                      class="img-fluid  " alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(function () {
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+                    keyboard: false
+                });
+                myModal.show();
+            }, 1000); // 3000 mili giây = 3 giây
+        });
+    </script> -->
 
     <!-- navbar hover -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

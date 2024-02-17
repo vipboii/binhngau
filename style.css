@@ -222,9 +222,17 @@
   list-style-position: inside;
 }
 
+.size{
+  width: 400px; /* Chiều rộng cố định */
+  max-width: 100%; /* Đảm bảo rằng card không bao giờ vượt quá chiều rộng của container */
+  margin: auto;
+}
 
-
-
+@media  (max-width: 768px){
+  .b{
+    text-align: center;
+  }
+}
 
 
 
