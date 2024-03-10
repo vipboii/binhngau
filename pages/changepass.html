@@ -1,0 +1,40 @@
+ <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="card">
+            <div class="card-header">
+              THAY ĐỔI MẬT KHẨU CỦA BẠN
+            </div>
+            <div class="card-body">
+              <form>
+                <!-- Current Password -->
+                <!-- <div class="mb-3">
+                  <label for="currentPassword" class="form-label" >Mật khẩu hiện tại</label>
+                  <input type="password"  ng-model="currentPassword" class="form-control pb-0" id="currentPassword" required>
+                </div> -->
+
+                <!-- <span ng-show="bug" class="text-danger">Sai mat khau</span> -->
+
+                <div class="form-group mb-0">
+                  <input type="password"  ng-model="currentPassword"  class="form-control"ng-class="{'is-invalid': bug}" id="currentPassword" required>
+                  <div class="invalid-feedback" ng-show="bug">
+                    Sai mật khẩu
+                  </div>
+                </div>
+                
+
+                <!-- New Password -->
+                <div class="mb-3">
+                  <label for="newPassword" class="form-label">Mật khẩu mới</label>
+                  <input type="password" ng-model="newPassword" class="form-control" id="newPassword" required>
+                </div>
+
+              
+                <!-- Submit Button -->
+                <button type="submit" ng-click="changePass()" class="btn btn-primary">Đổi mật khẩu</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

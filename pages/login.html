@@ -1,0 +1,78 @@
+
+  
+
+    <div class="container-fluid py-5 px-0 d-flex justify-content-center "
+        style="background-color: #F0F2F5;">
+        <div class="container w-75 py-5 px-0 mx-0">
+           <div class="row">
+            <div class="col-xl-7 col-lg-6 col-md-5 d-flex align-items-center">
+                <div class="container size">
+                    <p class="fs-1 fw-bold text-danger mb-0 font-monospace b">DirtyCoins</p>
+                    <p class="fs-3 fw-medium font-monospace">được bắt đầu từ 2017 tại Sài Gòn - Việt Nam, xuất phát ý tưởng về một thương hiệu Việt mang văn hóa đường phố.</p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-7"> 
+                <div class="card d-block size shadow">
+                    <form class="card-body pb-0">
+
+                        <span class="text-danger" ng-show="bug">
+                            Tài khoản và mật khẩu không chính xác <i class="fa-solid fa-exclamation"></i>
+                          </span>
+                          <span class="text-danger" ng-show="bug1">
+                            Không được để Trống <i class="fa-solid fa-exclamation"></i>
+                          </span>
+                          
+                        
+                          
+
+                        <input ng-class="{'is-invalid': bug}" type="text" class="form-control my-3 shadow-none" placeholder="Nhập tài khoản" ng-model="usernameForLogin" id="usernameForLogin"  >
+
+
+                        <input ng-class="{'is-invalid': bug}" type="password" class="form-control my-3 shadow-none" placeholder="Mật khẩu" id="passwordForLogin" ng-model="passwordForLogin" >
+                        <div class="d-grid gap-2 col-12 mx-auto my-3">
+                            <button ng-click="Login()" type="submit" class="btn btn-primary btn-outline-dark text-white p-2 border-0 fw-bold">
+                              Đăng nhập
+                        </button>
+                        </div>
+                        <div class="d-flex justify-content-center"><a class="mx-auto my-2 text-decoration-none" href="#">Quên mật khẩu?</a></div>
+                    </form>
+                    <hr class="m-0">
+                    <div class="d-grid gap-2 col-6 mx-auto my-2 p-1 d-flex justify-content-center">
+                        <a href="#!/test"><button style="background-color: #36A420;" class="btn text-white fw-bold p-2" type="button" >Tạo tài khoản mới</button></a>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        var app = angular.module("myapp", []);
+        app.controller("myctrl", function($scope, $http) {
+            $scope.dn = function() {
+                $http.get('account.json').then(function(response) {
+                    // Dữ liệu từ tệp JSON được lưu trong `response.data`
+                    var account = response.data; // Giả sử tệp JSON có cấu trúc là một mảng các đối tượng
+                    var tc = false;
+                    var motsv;
+                    for(var i = 0; i < account.length; i++) {
+                        motsv = account[i];
+                        if($scope.u == motsv.username && $scope.p == motsv.password) {
+                            tc = true;
+                            break;
+                        }
+                    }
+                    if(tc) {
+                        sessionStorage.setItem("username", motsv.username);
+                        sessionStorage.setItem("hoten", motsv.fullname);
+                        sessionStorage.setItem("email", motsv.email);
+                        document.location = "pages/home.html";
+                    } else {
+                        alert("Thông tin đăng nhập không chính xác");
+                    }
+                });
+            };
+        });
+    </script> -->
+    
+   

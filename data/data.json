@@ -1,0 +1,264 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "demo1",
+      "password": "111"
+    },
+    {
+      "id": "2",
+      "username": "demo2",
+      "password": "456"
+    },
+    {
+      "id": "3d59",
+      "username": "binhngau",
+      "password": "123"
+    },
+    {
+      "id": "6b7f",
+      "username": "tranghua",
+      "password": "123"
+    },
+    {
+      "id": "41bd",
+      "username": "hau",
+      "password": "123"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-312419da-8137-4a78-9152-46124ff9cb1d.jpg?v=1702452106000",
+      "title": "Dico Lil Dino Red T-shirt",
+      "price": "100.000",
+      "status": "Fuck"
+    },
+    {
+      "id": "2",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-b269122f-1278-422c-80d7-e1ea57f762ea.jpg?v=1705576101740",
+      "title": "Combo Letters Monogram Denim",
+      "price": "1.140.000"
+    },
+    {
+      "id": "3",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-ea29b464-f90e-453c-90e2-f7b238c5d095.jpg?v=1702299825000",
+      "title": "Letters Monogram Denim Backpack - Black",
+      "price": "720.000"
+    },
+    {
+      "id": "4",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-0d95855f-0355-4fde-ac20-55e649336194.jpg?v=1697697009000",
+      "title": "Letters Monogram Denim Jersey Shirt - Black",
+      "price": "690.000"
+    },
+    {
+      "id": "5",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-b68437b7-d308-4b0d-875a-1724b7f17fc6.jpg?v=1700205523000",
+      "title": "Letters Monogram Denim Short - Black",
+      "price": "450.000"
+    },
+    {
+      "id": "6",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/leather-bomber-1.jpg?v=1697873028000",
+      "title": "DC x GAM Worlds 23 Zipped Hoodie",
+      "price": "669.000"
+    },
+    {
+      "id": "7",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/felt-varsity-1.jpg?v=1697943944000",
+      "title": "Dragon All Print Shirt - Cream",
+      "price": "499.000"
+    },
+    {
+      "id": "8",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/denim-racing-1.jpg?v=1697943940000",
+      "title": "Relaxed Double Knee Jeans - Orange",
+      "price": "790.000"
+    },
+    {
+      "id": "9",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-849571d9-624e-4509-a10c-919eb2e59ef6.jpg?v=1697702347000",
+      "title": "Dico Lil Dino Red T-shirt - White",
+      "price": "390.000"
+    },
+    {
+      "id": "10",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/2-01a8a3a2-0c42-470e-b413-0017068ef3eb.jpg?v=1697790261000",
+      "title": "Combo Letters Monogram Denim",
+      "price": "1.140.000"
+    },
+    {
+      "id": "11",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-ed87e1b7-919b-418e-9442-0c9e10e6cde0.jpg?v=1697703206000",
+      "title": "Letters Monogram Denim Backpack - Black",
+      "price": "720.000"
+    },
+    {
+      "id": "12",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/nylon-varsity-1.jpg?v=1697873061000",
+      "title": "Letters Monogram Denim Jersey Shirt - Black",
+      "price": "690.000"
+    },
+    {
+      "id": "13",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-0db5d845-bef4-405d-b690-ca3f873d146c.jpg?v=1699434889000",
+      "title": "Letters Monogram Denim Short - Black",
+      "price": "450.000"
+    },
+    {
+      "id": "14",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/2-c7489656-f1cb-4b10-ac93-a6af49cd3617.jpg?v=1698056890000",
+      "title": "DC x GAM Worlds 23 Zipped Hoodie",
+      "price": "669.000"
+    },
+    {
+      "id": "15",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/img-1468.jpg?v=1694087146000",
+      "title": "Dragon All Print Shirt - Cream",
+      "price": "499.000"
+    },
+    {
+      "id": "16",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/nta101-43ac0jrd-1-y8qt-hinh-mat-truoc-0.jpg?v=1695528053000",
+      "title": "Relaxed Double Knee Jeans - Orange",
+      "price": "790.000"
+    },
+    {
+      "id": "17",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/back-6b5bce05-8875-4ca4-8c9a-204417c4e7f9.jpg?v=1693502225000",
+      "title": "Dico Lil Dino Red T-shirt - White",
+      "price": "390.000"
+    },
+    {
+      "id": "18",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-e1292130-d40f-42a6-9b8e-7bffe6f20ffb.jpg?v=1687516123000",
+      "title": "Combo Letters Monogram Denim",
+      "price": "1.140.000"
+    },
+    {
+      "id": "19",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/logo-track-jacket-a99be207-4870-4046-ae82-c8d5b0dbc9b1.jpg?v=1689910379000",
+      "title": "Letters Monogram Denim Backpack - Black",
+      "price": "720.000"
+    },
+    {
+      "id": "20",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/w-i-think-i-do-t-shirt-bla-01.jpg?v=1685187117000",
+      "title": "Letters Monogram Denim Jersey Shirt - Black",
+      "price": "690.000"
+    },
+    {
+      "id": "21",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/368962443-666281792084820-2564800252250659113-n-copy.jpg?v=1695299250827",
+      "title": "DC x BR Thương Bạn Trai T-shirt",
+      "price": "390.00",
+      "status": "Best Seller"
+    },
+    {
+      "id": "22",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/dm-20230821164209-001.jpg?v=1692637446997",
+      "title": "DC x BR THƯƠNG BẠN GÁI T-SHIRT",
+      "price": "390.00",
+      "status": "Best Seller"
+    },
+    {
+      "id": "23",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-a0714f1b-1c4d-45e6-bb93-24e4385740a1.jpg?v=1702294461583",
+      "title": "DIRTYCOINS PRINT SLIDES - COFFEE",
+      "price": "420.000",
+      "status": "Best Seller"
+    },
+    {
+      "id": "24",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/sandal.jpg?v=1689577163083",
+      "title": "DIRTYCOINS PRINT SLIDES - BLACK",
+      "price": "420.000",
+      "status": "Best Seller"
+    },
+    {
+      "id": "25",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/2-3d0a8b61-04fa-4be8-b3d1-29d1a54d41a9.jpg?v=1701674080263",
+      "title": "DICO MATE T-SHIRT - CREAM",
+      "price": "390.000",
+      "status": "Best Seller"
+    },
+    {
+      "id": "26",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/2-8c995def-28b3-4666-96ec-c5d3dd9156c5.jpg?v=1701673303593",
+      "title": "DICO MATE T-SHIRT - BLACK",
+      "price": "390.000",
+      "status": "Best Seller"
+    },
+    {
+      "id": "27",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-a82ac387-a980-4427-b1d1-6608bbb0eb85.jpg?v=1701762010987",
+      "title": "PUPPIES REGULAR T-SHIRT - BROWN",
+      "price": "390.000",
+      "status": "Best Seller"
+    },
+    {
+      "id": "28",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-7d3b9d23-43bb-4f49-b551-22e5848bf981.jpg?v=1701948647793",
+      "title": "DirtyCoins Embossed Slides - Black",
+      "price": "550.000",
+      "status": "Best Seller"
+    },
+    {
+      "id": "29",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-b269122f-1278-422c-80d7-e1ea57f762ea.jpg?v=1705576101740",
+      "title": "Dico Lil Dino Red T-shirt - White",
+      "price": "390.00",
+      "status": "New Arrivals"
+    },
+    {
+      "id": "30",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-8f8aa895-3d74-4b5b-9cbd-47976795d954.jpg?v=1703243569707",
+      "title": "Dragon All Print Shirt - Cream",
+      "price": "499.000",
+      "status": "New Arrivals"
+    },
+    {
+      "id": "31",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/2-1-e5b539cc-7914-48a4-a178-de27614291b1.jpg?v=1706942937927",
+      "title": "Metal Label Leather Jacket - Green",
+      "price": "1.350.000",
+      "status": "New Arrivals"
+    },
+    {
+      "id": "32",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-dc932871-1630-49d6-b8ec-286976283275.jpg?v=1706617490203",
+      "title": "University Felt Varsity Jacket - Red",
+      "price": "899.000",
+      "status": "New Arrivals"
+    },
+    {
+      "id": "33",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-24413097-c136-4001-81b4-4ba7087665a6.jpg?v=1706018130447",
+      "title": "University Felt Varsity Jacket - Red",
+      "price": "390.000",
+      "status": "New Arrivals"
+    },
+    {
+      "id": "34",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/2-86a6646e-5714-4fc4-a506-7390b56c8641.jpg?v=1705497779570",
+      "title": "DC x SVST Logo T-shirt - White",
+      "price": "400.000",
+      "status": "New Arrivals"
+    },
+    {
+      "id": "35",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-2dc193fd-9560-4398-942a-4311cbe9cdca.jpg?v=1704370473957",
+      "title": "Letters Monogram Denim Jersey Shirt",
+      "price": "690.000",
+      "status": "New Arrivals"
+    },
+    {
+      "id": "36",
+      "image": "https://bizweb.dktcdn.net/100/369/010/products/1-35ea4639-741f-474e-b80e-3c96ecafbd03.jpg?v=1704368996327",
+      "title": "Letters Monogram Denim Shorts - Black",
+      "price": "450.000",
+      "status": "New Arrivals"
+    }
+  ]
+}

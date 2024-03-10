@@ -9,14 +9,17 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
   <script src="https://kit.fontawesome.com/6744b65c5f.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"></script>
+
 </head>
 
-<body>
+<body ng-app="myapp" ng-controller="myctrl">
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="home.html"><img class="img-fluid"
+        <a class="navbar-brand" href="../index.html"><img class="img-fluid"
             src="https://theme.hstatic.net/1000306633/1000891824/14/logo.png?v=669" width="150" height="30" alt=""></a>
 
         <div class="navbar-nav mb-2 mb-lg-0 menu-3">
@@ -94,7 +97,7 @@
                 <a class="nav-link fs-5 fw-bold color font-monospace" href="login.html">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 fw-bold color font-monospace" href="#">Signup</a>
+                <a class="nav-link fs-5 fw-bold color font-monospace" href="signup.html">Signup</a>
               </li>
             </div>
           </div>
@@ -200,422 +203,46 @@
     </div>
   </div>
 
-
-
-
-
+  
 
   <div class="container-fluid d-flex justify-content-center">
     <div class="row w-card d-flex justify-content-center">
 
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0 ">
+      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0" ng-repeat="sp in listproduct">
         <div class="card-body p-0 position-relative">
           <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
             <li class="badge text-bg-dark p-2 demo">New arrival</li>
           </ul>
           <a href="details.html">
             <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-312419da-8137-4a78-9152-46124ff9cb1d.jpg?v=1702452106000"
+              src="{{sp.image}}"
               alt="">
             <div class="product-name-overlay">See details</div>
           </a>
         </div>
         <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dico Lil Dino Red
-            T-shirt
-            - White">Dico Lil Dino Red T-shirt - White</P>
-          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">Sale</li>
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src=" https://bizweb.dktcdn.net/100/369/010/products/1-b269122f-1278-422c-80d7-e1ea57f762ea.jpg?v=1705576101740"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Combo Letters
-            Monogram
-            Denim</P>
-          <P class="text-center m-0 ellipsis-text">1.140.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-ea29b464-f90e-453c-90e2-f7b238c5d095.jpg?v=1702299825000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body bg-transparent">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Backpack - Black</P>
-          <P class="text-center m-0 ellipsis-text">720.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-0d95855f-0355-4fde-ac20-55e649336194.jpg?v=1697697009000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Jersey Shirt - Black</P>
-          <P class="text-center m-0 ellipsis-text">690.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-b68437b7-d308-4b0d-875a-1724b7f17fc6.jpg?v=1700205523000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Short - Black</P>
-          <P class="text-center m-0 ellipsis-text">450.000<u>đ</u></P>
-        </div>
-      </div>
-
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/leather-bomber-1.jpg?v=1697873028000" alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">DC x GAM Worlds 23
-            Zipped
-            Hoodie</P>
-          <P class="text-center m-0 ellipsis-text">669.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/felt-varsity-1.jpg?v=1697943944000" alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dragon All Print
-            Shirt -
-            Cream</P>
-          <P class="text-center m-0 ellipsis-text">499.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/denim-racing-1.jpg?v=1697943940000" alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Relaxed Double Knee
-            Jeans
-            - Orange</P>
-          <P class="text-center m-0 ellipsis-text">790.000<u>đ</u></P>
-        </div>
-      </div>
-
-
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0 ">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-849571d9-624e-4509-a10c-919eb2e59ef6.jpg?v=1697702347000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dico Lil Dino Red
-            T-shirt
-            - White">Dico Lil Dino Red T-shirt - White</P>
-          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">Sale</li>
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/2-01a8a3a2-0c42-470e-b413-0017068ef3eb.jpg?v=1697790261000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Combo Letters
-            Monogram
-            Denim</P>
-          <P class="text-center m-0 ellipsis-text">1.140.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-ed87e1b7-919b-418e-9442-0c9e10e6cde0.jpg?v=1697703206000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body bg-transparent">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Backpack - Black</P>
-          <P class="text-center m-0 ellipsis-text">720.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/nylon-varsity-1.jpg?v=1697873061000" alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Jersey Shirt - Black</P>
-          <P class="text-center m-0 ellipsis-text">690.000<u>đ</u></P>
-        </div>
-      </div>
-
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-0db5d845-bef4-405d-b690-ca3f873d146c.jpg?v=1699434889000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Short - Black</P>
-          <P class="text-center m-0 ellipsis-text">450.000<u>đ</u></P>
-        </div>
-      </div>
-
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/2-c7489656-f1cb-4b10-ac93-a6af49cd3617.jpg?v=1698056890000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">DC x GAM Worlds 23
-            Zipped
-            Hoodie</P>
-          <P class="text-center m-0 ellipsis-text">669.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid" src="https://bizweb.dktcdn.net/100/369/010/products/img-1468.jpg?v=1694087146000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dragon All Print
-            Shirt -
-            Cream</P>
-          <P class="text-center m-0 ellipsis-text">499.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/nta101-43ac0jrd-1-y8qt-hinh-mat-truoc-0.jpg?v=1695528053000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Relaxed Double Knee
-            Jeans
-            - Orange</P>
-          <P class="text-center m-0 ellipsis-text">790.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0 ">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/back-6b5bce05-8875-4ca4-8c9a-204417c4e7f9.jpg?v=1693502225000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Dico Lil Dino Red
-            T-shirt
-            - White">Dico Lil Dino Red T-shirt - White</P>
-          <P class="text-center m-0 ellipsis-text">390.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">Sale</li>
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/1-e1292130-d40f-42a6-9b8e-7bffe6f20ffb.jpg?v=1687516123000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Combo Letters
-            Monogram
-            Denim</P>
-          <P class="text-center m-0 ellipsis-text">1.140.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/logo-track-jacket-a99be207-4870-4046-ae82-c8d5b0dbc9b1.jpg?v=1689910379000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body bg-transparent">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Backpack - Black</P>
-          <P class="text-center m-0 ellipsis-text">720.000<u>đ</u></P>
-        </div>
-      </div>
-
-      <div class="card col-lg-3 col-md-6 col-sm-6 card-w card-w m-1 p-0 border-0">
-        <div class="card-body p-0 position-relative">
-          <ul class=" list-unstyled d-flex flex-wrap gap-2 position-absolute">
-            <li class="badge text-bg-dark p-2 demo">New arrival</li>
-          </ul>
-          <a href="#">
-            <img class="img-fluid"
-              src="https://bizweb.dktcdn.net/100/369/010/products/w-i-think-i-do-t-shirt-bla-01.jpg?v=1685187117000"
-              alt="">
-            <div class="product-name-overlay">See details</div>
-          </a>
-        </div>
-        <div class="card-footer border-0 bg-body">
-          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">Letters Monogram
-            Denim
-            Jersey Shirt - Black</P>
-          <P class="text-center m-0 ellipsis-text">690.000<u>đ</u></P>
+          <P style="font-size: 13px;" class="fs- m-0 text-center ellipsis-text text-uppercase">{{sp.title}}</P>
+          <P class="text-center m-0 ellipsis-text">{{sp.price}}<u>đ</u></P>
         </div>
       </div>
 
     </div>
   </div>
 
-
-
+  <script>
+    var app = angular.module("myapp",[])
+    app.controller("myctrl",function($scope,$http){
+      $scope.listproduct=[];
+      $http.get("../data/product.json").then(
+        function(d){
+          $scope.listproduct=d.data
+        },
+      function (e) {
+        alert("Lỗi" + e.statusText);
+      }
+      )
+    })
+  </script>
 
 
   <div class="container border-top mt-5">
@@ -1046,11 +673,11 @@
 
   <div class="container-fluid border-top p-4 ">
     <p class="text-center">Copyright © 2024 Assignment 1 by vipboi</p>
-  </div>
+  </div> 
 
 
-    <!-- navbar hover -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(window).scroll(function () {
       if ($(this).scrollTop() > 50) { // Nếu cuộn trang hơn 50px
@@ -1059,8 +686,7 @@
         $('.sticky-top').removeClass('navbar-shadow');
       }
     });
-  </script>
-
+  </script> 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
